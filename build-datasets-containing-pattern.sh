@@ -10,7 +10,7 @@ set -xe
 cat registry.tsv\
  | grep "${PATTERN_NAME}"\
  | cut -f2\
- | parallel 'preston ls | preston match -l tsv {1}'\
+ | parallel --line-buffer 'preston ls | preston match -l tsv {1}'\
  | grep "http://www.w3.org/ns/prov#value"\
  | cut -f1,3\
  | grep -o -E "(hash:\/\/sha256\/[a-f0-9]{64})"\
