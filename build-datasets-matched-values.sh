@@ -1,19 +1,17 @@
 #!/bin/bash
 #
-# build a lookup table with any datasets matching at least one entry of a pattern
+# reads from stdin to p
 #
 #
 set -xe
 
-PATTERN_NAME=$(cat datasets-containing-pattern.tsv\
- | head -n1\
- | cut -f1)
+PATTERN_NAME=${1:-email}
 
 PATTERN=$(cat registry.tsv\
  | grep "${PATTERN_NAME}"\
  | cut -f2)
 
-cat datasets-containing-pattern.tsv \
+cat\
  | cut -f2\
  | sed "s+^+<a> <http://purl.org/pav/hasVersion> <+g" \
  | sed "s+$+> \.+g" \
