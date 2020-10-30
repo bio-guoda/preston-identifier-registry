@@ -3,7 +3,8 @@
 # build a lookup table with any datasets matching at least one entry of a pattern
 #
 #
-PATTERN_NAME="${1:-email}"
+PATTERN_DEFAULT="[a-zA-Z0-9_.+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}"
+PATTERN="${1:-${PATTERN_DEFAULT}}"
 
 set -xe
 
