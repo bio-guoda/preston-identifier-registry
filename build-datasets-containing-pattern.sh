@@ -14,6 +14,4 @@ cat registry.tsv\
  | grep "http://www.w3.org/ns/prov#value"\
  | cut -f1,3\
  | grep -o -E "(hash:\/\/sha256\/[a-f0-9]{64})"\
- | sort\
- | uniq\
  | sed "s/^/${PATTERN_NAME}\t/g"

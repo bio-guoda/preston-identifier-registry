@@ -22,6 +22,4 @@ cat datasets-containing-pattern.tsv \
  | cut -f1,3\
  | sed 's+^.*hash:+hash:+g'\
  | sed 's+!/.*\t+\t+g'\
- | awk -F '\t' '{ print $2 "\t" $1 }' \
- | sort\
- | uniq
+ | awk -F '\t' '{ print $2 "\t" $1 }'
