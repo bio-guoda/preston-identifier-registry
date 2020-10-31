@@ -9,4 +9,4 @@
 
 PATTERN_NAME=${1:-email}
 
-kafkacat -b localhost:9092 -t ${PATTERN_NAME} -K '|'
+kafkacat -b localhost:9092 -t ${PATTERN_NAME}
