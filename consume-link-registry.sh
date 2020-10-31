@@ -10,3 +10,7 @@
 PATTERN_NAME=${1:-email}
 
 kafkacat -b localhost:9092 -t ${PATTERN_NAME}
+
+# Note that the messages are likely keyed to enable compaction (aka key de-duplication) 
+# if you'd like to see the keys printed along with the message, you can use something like
+# kafkacat -b localhost:9092 -t ${PATTERN_NAME} -f 'Topic %t [%p] at offset %o: key [%k]: message: [%s]\n'
