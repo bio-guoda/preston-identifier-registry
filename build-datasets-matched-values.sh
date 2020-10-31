@@ -12,7 +12,6 @@ PATTERN=$(cat registry.tsv\
  | cut -f2)
 
 cat\
- | cut -f2\
  | sed "s+^+<a> <http://purl.org/pav/hasVersion> <+g" \
  | sed "s+$+> \.+g" \
  | preston match -l tsv "${PATTERN}"\
