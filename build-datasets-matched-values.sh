@@ -19,4 +19,5 @@ cat\
  | cut -f1,3\
  | sed 's+^.*hash:+hash:+g'\
  | sed 's+!/.*\t+\t+g'\
+ | uniq\
  | awk -F '\t' '{ print $2 $1 "|" $2 "\t" $1 }'
