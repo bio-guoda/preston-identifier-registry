@@ -11,9 +11,7 @@ PATTERN=$(cat registry.tsv\
  | grep "${PATTERN_NAME}"\
  | cut -f2)
 
-cat\
- | sed "s+^+<a> <http://purl.org/pav/hasVersion> <+g" \
- | sed "s+$+> \.+g" \
+preston ls\
  | preston match -l tsv "${PATTERN}"\
  | grep "http://www.w3.org/ns/prov#value"\
  | cut -f1,3\
