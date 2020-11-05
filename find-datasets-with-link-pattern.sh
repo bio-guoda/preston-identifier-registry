@@ -12,11 +12,5 @@ PATTERN_NAME=${1:-arctos}
 kafkacat -e -b http://localhost:9092 -t ${PATTERN_NAME}\
  | cut -f2\
  | uniq\
- | sort\
- | uniq\
- | awk -v quote="'" '{ print quote "https://preston.guoda.bio/cat/zip:" $1 "!/eml.xml" quote }'\
- | xargs -L1 curl\
- | xmllint --xpath 'string(//title)' -\
- | sort\
- | uniq
+ | awk -v quote="'" '{ print "https://preston.guoda.bio/cat/zip:" $1 "!/eml.xml"  }'
  
