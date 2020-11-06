@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# Follow message posted in link registry: consuming existing messages
-# and waits for new messages to appear.
+# Follow new message posted in link registry.
 #
 # Usage:
 #   ./consume-link-registry.sh [pattern name]
@@ -10,7 +9,9 @@
 
 PATTERN_NAME=${1:-email}
 
-kafkacat -C -b localhost:9092 -t ${PATTERN_NAME}
+OFFSET=$(kafkacat -Q -b localhost:9092 -t ${PATTERN_NAME}:0:-1 | cut -d ' ' -f4)
+
+kafkacat -C -b localhost:9092 -t ${PATTERN_NAME} -o ${OFFSET}
 
 # Note that the messages are likely keyed to enable compaction (aka key de-duplication) 
 # if you'd like to see the keys printed along with the message, you can use something like
