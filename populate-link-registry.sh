@@ -9,7 +9,7 @@
 # Prerequisites: a running kafka broker and a kafka topic (see https://github.com/bio-guoda/preston-scripts/tree/main/server) .
 #
 
-
+set -xe
 
 PATTERN_NAME=${1:-email}
 date
