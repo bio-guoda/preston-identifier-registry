@@ -10,7 +10,7 @@
 
 PATTERN_NAME=${1:-email}
 
-kafkacat -b localhost:9092 -t ${PATTERN_NAME}
+kafkacat -C -b localhost:9092 -t ${PATTERN_NAME}
 
 # Note that the messages are likely keyed to enable compaction (aka key de-duplication) 
 # if you'd like to see the keys printed along with the message, you can use something like
