@@ -6,4 +6,4 @@ doi	10[.][0-9]{4,9}/[-._;()/:a-zA-Z0-9]+	doi pattern 	10.1000/182
 symbiota	http[s]{0,1}://[a-zA-Z0-9.:]+/portal/collections/individual/index.php[?]{1}occid=[0-9]+	symbiota hosted specimen references	https://scan-bugs.org/portal/collections/individual/index.php?occid=31925925
 inaturalist	http[s]{0,1}://www.inaturalist.org/observations/[0-9]+	inaturalist observation records	https://www.inaturalist.org/observations/27508530
 orcid	[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}	ids for people and institutions https://orcid.org/	0000-0003-1038-3028
-genbank	http://www.ncbi.nlm.nih.gov/nuccore/[A-Za-z]+_?[0-9]+([.][0-9]+){0,}	links to genetic sequences via NCBI's GenBank	http://www.ncbi.nlm.nih.gov/nuccore/AY181515
+genbank	http[s]{0,1}://www.ncbi.nlm.nih.gov/nuccore/([A-Za-z]+_?){0,1}[0-9]+([.][0-9]+){0,}	links to genetic sequences via NCBI's GenBank	http://www.ncbi.nlm.nih.gov/nuccore/AY181515
