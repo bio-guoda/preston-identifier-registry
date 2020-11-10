@@ -11,7 +11,7 @@ PATTERN=$(cat registry.tsv\
  | grep "${PATTERN_NAME}"\
  | cut -f2)
 
-preston ls\
+./consume-link-registry.sh location\
  | preston match -l tsv "${PATTERN}"\
  | grep "http://www.w3.org/ns/prov#value"\
  | cut -f1,3\
