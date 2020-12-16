@@ -13,6 +13,12 @@ Digital Object Identifier (DOI)
 
 Life Science Identifier (LSID)
 
+Pereira Ricardo, Richards Kevin, Hobern Donald, Hyam Roger, Belbin Lee, Blum Stan. 2009. TDWG Life Sciences Identifiers (LSID) Applicability Statement, Version 2009-09. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/150
+
+Globally Unique Identifier (GUID)
+
+Richards Kevin. 2010. TDWG GUID Applicability Statement, Version 2010-09. Biodiversity Information Standards (TDWG) http://www.tdwg.org/standards/150
+
 Email Addresses 
 
 UUIDs 
