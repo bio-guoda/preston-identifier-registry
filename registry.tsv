@@ -1,6 +1,6 @@
 name	pattern	description	example
 arctos	http://arctos.database.museum/guid/[a-zA-Z]+:[a-zA-Z]+:[a-zA-Z0-9().-]+[a-zA-Z0-9]	pattern matches arctos specimen identifiers 	http://arctos.database.museum/guid/MSB:Mamm:232346
-uuid-urn	urn:uuid:[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	pattern matching UUIDs	46b51306-79ba-4a79-975b-094ccaf424ad
+uuid-urn	urn:uuid:[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	pattern matching UUIDs	urn:uuid:46b51306-79ba-4a79-975b-094ccaf424ad
 uuid	[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	pattern matching UUIDs	46b51306-79ba-4a79-975b-094ccaf424ad
 email	[a-zA-Z0-9_.+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}	matches uncomplicated email addresses	joe@example.org
 doi	10[.][0-9]{4,9}/[a-zA-Z0-9][._;()/:a-zA-Z0-9-]+[a-zA-Z0-9]	doi pattern 	10.1000/182
@@ -13,6 +13,7 @@ ark	ark:/[0-9]{5}/[0-9A-Za-z=#*+@_$%/-]+	Archival Resource Keys (ARKs) See https
 catalog	[uU][rR][nN]:[cC][aA][tT][aA][lL][oO][gG]:[^\s,"']+	URI for catalog records	urn:catalog:CAS:ENT:9035070
 lsid	[uU][rR][nN]:[lL][sS][iI][dD]:[^\s,"']+	URI for life science identifiers	urn:lsid:Coreoidea.speciesfile.org:TaxonName:456470
 bgbm	http://herbarium.bgbm.org/object/[a-zA-Z]+[0-9]+	Botanischer Garten und Botanisches Museum Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://herbarium.bgbm.org/object/B100277113
+ggbn	http[s]{0,1}://dnabank[.]bgbm[.]org/object/[a-zA-Z]+[0-9]+	Global Genome Biodiversity Network (GGBN)	http://dnabank.bgbm.org/object/DB15482
 luomus	http://id.luomus.fi/GL.749	Finnish Museum of Natural History, Helsinki. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.luomus.fi/GL.749
 ibot	http://ibot.sav.sk/herbarium/object/[a-zA-Z]+[0-9]+	Institute of Botany, Slovak Academy of Sciences, Bratislava. Also see https://cetaf.org/cetaf-stable-identifiers .	http://ibot.sav.sk/herbarium/object/SAV0001234
 mfn-berlin	http://coll.mfn-berlin.de/u/[a-zA-Z0-9_]+	Museum für Naturkunde, Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://coll.mfn-berlin.de/u/ZMB_Orth_BA000061S01
@@ -26,5 +27,11 @@ sbsb	http://id.snsb.info/snsb/collection/[0-9]+/[0-9]+/[0-9]+	Staatliche Naturwi
 zmfk	http://id.zfmk.de/collection_ZFMK/[0-9]+	Zoologisches Forschungsmuseum Alexander Koenig, Bonn. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.zfmk.de/collection_ZFMK/2003261
 meise	http://www.botanicalcollections.be/specimen/[a-zA-Z]+[0-9]+	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://www.botanicalcollections.be/specimen/BR0000008422330
 rmca	http://darwinweb.africamuseum.be/object/[a-zA-Z0-9_-]+[a-zA-Z0-9]	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898
-antweb	http[s]{0,1}://www.antweb.org/specimen/[a-z][A-Z]+[0-9]+	AntWeb	http://www.antweb.org/specimen/FMNHINS0000105044
-tun	http[s]{0,1}://tun.fi/[a-zA-Z]+[.][0-9]+	various Finnish natural history museums	http://tun.fi/GAVK.2
+antweb	http[s]{0,1}://www[.]antweb[.]org/specimen/[a-z][A-Z]+[0-9]+	AntWeb	http://www.antweb.org/specimen/FMNHINS0000105044
+tun	http[s]{0,1}://tun[.]fi/[a-zA-Z]+[.][0-9]+	various Finnish natural history museums	http://tun.fi/GAVK.2
+oulu	http[s]{0,1}://id[.][a-z]+[.]oulu[.]fi/[a-zA-Z]+[.][0-9]+	Museums at University of Oulu, Finland	http://id.zmuo.oulu.fi/MU.1
+tur	http[s]{0,1}://mus[.]utu[.]fi/[a-zA-Z]+[.][0-9]+	Natural History Museum, University of Turku, Finland	http://mus.utu.fi/TFN.1
+huh	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	Harvard University Herbarium	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/413bd724-7a92-41fe-befa-c7e1678b54a7
+mcz	http[s]{0,1}://mczbase[.]mcz[.]harvard[.]edu/guid/[a-zA-Z]+:[a-zA-Z]:[0-9]+	Harvard Museum of Comparative Zoology	http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:53924
+kew	http[s]{0,1}://specimens[.]kew[.]org/herbarium/[a-zA-Z][0-9]+	Kew Botanical Gardens	http://specimens.kew.org/herbarium/K001116483
+
