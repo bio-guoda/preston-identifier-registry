@@ -1,5 +1,5 @@
 name	pattern	description	example
-arctos	http://arctos.database.museum/guid/[a-zA-Z]+:[a-zA-Z]+:[^ \t\n,?;]+	pattern matches arctos specimen identifiers 	http://arctos.database.museum/guid/MSB:Mamm:232346
+arctos	http://arctos.database.museum/guid/[a-zA-Z]+:[a-zA-Z]+:[a-zA-Z0-9().-]+[a-zA-Z0-9]	pattern matches arctos specimen identifiers 	http://arctos.database.museum/guid/MSB:Mamm:232346
 uuid-urn	urn:uuid:[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	pattern matching UUIDs	46b51306-79ba-4a79-975b-094ccaf424ad
 uuid	[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	pattern matching UUIDs	46b51306-79ba-4a79-975b-094ccaf424ad
 email	[a-zA-Z0-9_.+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}	matches uncomplicated email addresses	joe@example.org
@@ -25,6 +25,4 @@ smns	http://col.smns-bw.org/object/[A-Za-Z][0-9]+	Staatliches Museum für Naturk
 sbsb	http://id.snsb.info/snsb/collection/[0-9]+/[0-9]+/[0-9]+	Staatliche Naturwissenschaftliche Sammlungen Bayerns. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.snsb.info/snsb/collection/97112/153455/93009
 zmfk	http://id.zfmk.de/collection_ZFMK/[0-9]+	Zoologisches Forschungsmuseum Alexander Koenig, Bonn. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.zfmk.de/collection_ZFMK/2003261
 meise	http://www.botanicalcollections.be/specimen/[a-zA-Z]+[0-9]+	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://www.botanicalcollections.be/specimen/BR0000008422330
-rmca	http://darwinweb.africamuseum.be/object/[a-zA-Z0-9_-]+[^._-]	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898
-
-
+rmca	http://darwinweb.africamuseum.be/object/[a-zA-Z0-9_-]+[a-zA-Z0-9]	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898
