@@ -11,19 +11,19 @@ bold	BOLD:[A-Z0-9]+([.][0-9]+)*	links to Barcode of Life Data System (BOLD) via 
 ark	ark:/[0-9]{5}/[0-9A-Za-z=#*+@_$%/-]+	Archival Resource Keys (ARKs) See https://en.wikipedia.org/wiki/Archival_Resource_Key	ark:/65665/387f21a69b6294330858f7ea60e3ca132
 catalog	[uU][rR][nN]:[cC][aA][tT][aA][lL][oO][gG]:[^\s,"']+	URI for catalog records	urn:catalog:CAS:ENT:9035070
 lsid	[uU][rR][nN]:[lL][sS][iI][dD]:[^\s,"']+	URI for life science identifiers	urn:lsid:Coreoidea.speciesfile.org:TaxonName:456470
-bgbm	http://herbarium.bgbm.org/object/[A-Z]+[0-9]+	Botanischer Garten und Botanisches Museum Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://herbarium.bgbm.org/object/B100277113
+bgbm	http://herbarium.bgbm.org/object/[a-zA-Z]+[0-9]+	Botanischer Garten und Botanisches Museum Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://herbarium.bgbm.org/object/B100277113
 luomus	http://id.luomus.fi/GL.749	Finnish Museum of Natural History, Helsinki. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.luomus.fi/GL.749
-ibot	http://ibot.sav.sk/herbarium/object/SAV0001234	Institute of Botany, Slovak Academy of Sciences, Bratislava. Also see https://cetaf.org/cetaf-stable-identifiers .	http://ibot.sav.sk/herbarium/object/SAV0001234
-mfn-berlin	http://coll.mfn-berlin.de/u/ZMB_Orth_BA000061S01	Museum für Naturkunde, Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://coll.mfn-berlin.de/u/ZMB_Orth_BA000061S01
-mnhn	http://coldb.mnhn.fr/catalognumber/mnhn/ec/ec32	Muséum national d'histoire naturelle, Paris. Also see https://cetaf.org/cetaf-stable-identifiers .	http://coldb.mnhn.fr/catalognumber/mnhn/ec/ec32
-naturalis	http://data.biodiversitydata.nl/naturalis/specimen/RMNH.AVES.110103	Naturalis Biodiversity Center, Leiden. Also see https://cetaf.org/cetaf-stable-identifiers .	http://data.biodiversitydata.nl/naturalis/specimen/RMNH.AVES.110103
-nhm-london	http://data.nhm.ac.uk/object/a9bdc16d-c9ba-4e32-9311-d5250af2b5ac	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .	http://data.nhm.ac.uk/object/a9bdc16d-c9ba-4e32-9311-d5250af2b5ac
-nhmuio	http://purl.org/nhmuio/id/41d9cbb4-4590-4265-8079-ca44d46d27c3	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .	http://purl.org/nhmuio/id/41d9cbb4-4590-4265-8079-ca44d46d27c3
-rbge	data.rbge.org.uk/herb/E00421509	Royal Botanic Garden Edinburgh. Also see https://cetaf.org/cetaf-stable-identifiers .	data.rbge.org.uk/herb/E00421509
-smns	http://col.smns-bw.org/object/S10000227722006	Staatliches Museum für Naturkunde Stuttgart. Also see https://cetaf.org/cetaf-stable-identifiers .	http://col.smns-bw.org/object/S10000227722006
-sbsb	http://id.snsb.info/snsb/collection/97112/153455/93009	Staatliche Naturwissenschaftliche Sammlungen Bayerns. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.snsb.info/snsb/collection/97112/153455/93009
-zmfk	http://id.zfmk.de/collection_ZFMK/2003261	Zoologisches Forschungsmuseum Alexander Koenig, Bonn. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.zfmk.de/collection_ZFMK/2003261
-meise	http://www.botanicalcollections.be/specimen/BR0000008422330	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://www.botanicalcollections.be/specimen/BR0000008422330
-rmca	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898
+ibot	http://ibot.sav.sk/herbarium/object/[a-zA-Z]+[0-9]+	Institute of Botany, Slovak Academy of Sciences, Bratislava. Also see https://cetaf.org/cetaf-stable-identifiers .	http://ibot.sav.sk/herbarium/object/SAV0001234
+mfn-berlin	http://coll.mfn-berlin.de/u/[a-zA-Z0-9_]+	Museum für Naturkunde, Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://coll.mfn-berlin.de/u/ZMB_Orth_BA000061S01
+mnhn	http://coldb.mnhn.fr/catalognumber/mnhn/[a-zA-Z]+/[a-zA-Z]+[0-9]+	Muséum national d'histoire naturelle, Paris. Also see https://cetaf.org/cetaf-stable-identifiers .	http://coldb.mnhn.fr/catalognumber/mnhn/ec/ec32
+naturalis	http://data.biodiversitydata.nl/naturalis/specimen/[a-zA-Z]+[.][a-zA-Z]+[.][0-9]+	Naturalis Biodiversity Center, Leiden. Also see https://cetaf.org/cetaf-stable-identifiers .	http://data.biodiversitydata.nl/naturalis/specimen/RMNH.AVES.110103
+nhm-london	http://data.nhm.ac.uk/object/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .	http://data.nhm.ac.uk/object/a9bdc16d-c9ba-4e32-9311-d5250af2b5ac
+nhmuio	http://purl.org/nhmuio/id/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .	http://purl.org/nhmuio/id/41d9cbb4-4590-4265-8079-ca44d46d27c3
+rbge	http://data.rbge.org.uk/[a-zA-Z]+/[A-Za-z]+[0-9]+	Royal Botanic Garden Edinburgh. Also see https://cetaf.org/cetaf-stable-identifiers .	data.rbge.org.uk/herb/E00421509
+smns	http://col.smns-bw.org/object/[A-Za-Z][0-9]+	Staatliches Museum für Naturkunde Stuttgart. Also see https://cetaf.org/cetaf-stable-identifiers .	http://col.smns-bw.org/object/S10000227722006
+sbsb	http://id.snsb.info/snsb/collection/[0-9]+/[0-9]+/[0-9]+	Staatliche Naturwissenschaftliche Sammlungen Bayerns. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.snsb.info/snsb/collection/97112/153455/93009
+zmfk	http://id.zfmk.de/collection_ZFMK/[0-9]+	Zoologisches Forschungsmuseum Alexander Koenig, Bonn. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.zfmk.de/collection_ZFMK/2003261
+meise	http://www.botanicalcollections.be/specimen/[a-zA-Z]+[0-9]+	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://www.botanicalcollections.be/specimen/BR0000008422330
+rmca	http://darwinweb.africamuseum.be/object/[a-zA-Z0-9_-]+[^._-]	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898
 
 
