@@ -8,6 +8,7 @@ set -xe
 PATTERN_NAME=${1:-email}
 
 PATTERN=$(cat registry.tsv\
+ | cut -f1,2
  | grep "${PATTERN_NAME}"\
  | cut -f2)
 
