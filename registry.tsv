@@ -25,7 +25,7 @@ rbge	http://data.rbge.org.uk/[a-zA-Z]+/[A-Za-z]+[0-9]+	Royal Botanic Garden Edin
 smns	http://col.smns-bw.org/object/[A-Za-Z][0-9]+	Staatliches Museum für Naturkunde Stuttgart. Also see https://cetaf.org/cetaf-stable-identifiers .	http://col.smns-bw.org/object/S10000227722006
 sbsb	http://id.snsb.info/snsb/collection/[0-9]+/[0-9]+/[0-9]+	Staatliche Naturwissenschaftliche Sammlungen Bayerns. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.snsb.info/snsb/collection/97112/153455/93009
 zmfk	http://id.zfmk.de/collection_ZFMK/[0-9]+	Zoologisches Forschungsmuseum Alexander Koenig, Bonn. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.zfmk.de/collection_ZFMK/2003261
-meise	http://www.botanicalcollections.be/specimen/[a-zA-Z]+[0-9]+	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://www.botanicalcollections.be/specimen/BR0000008422330
+meise	http://www.botanicalcollections.be/specimen/[a-zA-Z]+[0-9]+V?	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://www.botanicalcollections.be/specimen/BR0000008422330
 rmca	http://darwinweb.africamuseum.be/object/[a-zA-Z0-9_-]+[a-zA-Z0-9]	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898
 antweb	http[s]{0,1}://www[.]antweb[.]org/specimen/[a-z][A-Z]+[0-9]+	AntWeb	http://www.antweb.org/specimen/FMNHINS0000105044
 tun	http[s]{0,1}://tun[.]fi/[a-zA-Z]+[.][0-9]+	various Finnish natural history museums	http://tun.fi/GAVK.2
