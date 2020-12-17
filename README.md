@@ -5,7 +5,7 @@ Also includes scripts to automatically track these identifiers across [Preston](
 
 ## Related 
 
-Consortium of European Taxonomic Facilitaties (CETAF) Stable Identifiers - https://cetaf.org/cetaf-stable-identifiers 
+Consortium of European Taxonomic Facilitaties (CETAF) Stable Identifiers - https://cetaf.org/cetaf-stable-identifiers https://cetafidentifiers.biowikifarm.net/wiki/CETAF_Specimen_Catalogue 
 
 Archival Resource Key (ARK)
 
