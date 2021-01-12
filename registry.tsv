@@ -34,4 +34,4 @@ tur	http[s]{0,1}://mus[.]utu[.]fi/[a-zA-Z]+[.][0-9]+	Natural History Museum, Uni
 huh	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	Harvard University Herbarium	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/413bd724-7a92-41fe-befa-c7e1678b54a7
 mcz	http[s]{0,1}://mczbase[.]mcz[.]harvard[.]edu/guid/[a-zA-Z]+:[a-zA-Z]:[0-9]+	Harvard Museum of Comparative Zoology	http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:53924
 kew	http[s]{0,1}://specimens[.]kew[.]org/herbarium/[a-zA-Z][0-9]+	Kew Botanical Gardens	http://specimens.kew.org/herbarium/K001116483
-guano	[Gg][Uu][Aa][Nn][Oo]	https://en.wikipedia.org/wiki/Guano	guano
+guano	[^a-zA-Z][Gg][Uu][Aa][Nn][Oo][^a-zA-Z]	https://en.wikipedia.org/wiki/Guano	guano
