@@ -10,8 +10,8 @@ orcid	[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}	ids for people and institutions https:
 genbank	http[s]{0,1}://www.ncbi.nlm.nih.gov/nuccore/([A-Za-z]+_?){0,1}[0-9]+([.][0-9]+){0,}	links to genetic sequences via NCBI's GenBank	http://www.ncbi.nlm.nih.gov/nuccore/AY181515
 bold	BOLD:[A-Z0-9]+([.][0-9]+)*	links to Barcode of Life Data System (BOLD) via Barcode Index Numbers (BIN) URIs. See https://doi.org/10.1371/journal.pone.0066213	BOLD:AAL4464
 ark	ark:/[0-9]{5}/[0-9A-Za-z=#*+@_$%/-]+	Archival Resource Keys (ARKs) See https://en.wikipedia.org/wiki/Archival_Resource_Key	ark:/65665/387f21a69b6294330858f7ea60e3ca132
-catalog	[uU][rR][nN]:[cC][aA][tT][aA][lL][oO][gG]:[^\s,"']+	URI for catalog records	urn:catalog:CAS:ENT:9035070
-lsid	[uU][rR][nN]:[lL][sS][iI][dD]:[^\s,"']+	URI for life science identifiers	urn:lsid:Coreoidea.speciesfile.org:TaxonName:456470
+catalog	"[uU][rR][nN]:[cC][aA][tT][aA][lL][oO][gG]:[^\s,""']+"	URI for catalog records	urn:catalog:CAS:ENT:9035070
+lsid	"[uU][rR][nN]:[lL][sS][iI][dD]:[^\s,""']+"	URI for life science identifiers	urn:lsid:Coreoidea.speciesfile.org:TaxonName:456470
 bgbm	http://herbarium.bgbm.org/object/[a-zA-Z]+[0-9]+	Botanischer Garten und Botanisches Museum Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://herbarium.bgbm.org/object/B100277113
 ggbn	http[s]{0,1}://dnabank[.]bgbm[.]org/object/[a-zA-Z]+[0-9]+	Global Genome Biodiversity Network (GGBN)	http://dnabank.bgbm.org/object/DB15482
 luomus	http://id.luomus.fi/GL.749	Finnish Museum of Natural History, Helsinki. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.luomus.fi/GL.749
@@ -35,3 +35,4 @@ huh	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/[a-fA-F0-9]{8}-[a-fA-F0-9
 mcz	http[s]{0,1}://mczbase[.]mcz[.]harvard[.]edu/guid/[a-zA-Z]+:[a-zA-Z]:[0-9]+	Harvard Museum of Comparative Zoology	http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:53924
 kew	http[s]{0,1}://specimens[.]kew[.]org/herbarium/[a-zA-Z][0-9]+	Kew Botanical Gardens	http://specimens.kew.org/herbarium/K001116483
 guano	[^a-zA-Z][Gg][Uu][Aa][Nn][Oo][^a-zA-Z]	https://en.wikipedia.org/wiki/Guano	guano
+jacq	http[s]{0,1}://[a-z]+[.]jacq[.]org/[A-Z-]+[0-9]+	https://jacq.org - a jointly administered herbarium management system and specimen database	https://je.jacq.org/JE07002985
