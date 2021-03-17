@@ -3,6 +3,7 @@
 #
 # Note: depending on your internet bandwidth, it might take a while to download, and scan through, ~1TB of data. 
 #
+# Aside from standard *nix tools, this script depends on Preston (https://preston.guoda.bio) and pv (pipe viewer)
 
 preston ls --no-cache --remote https://deeplinker.bio,https://archive.org/download/biodiversity-dataset-archives/data.zip/data/\
 | preston grep --no-cache -l tsv "0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}"\
