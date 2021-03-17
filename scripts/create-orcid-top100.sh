@@ -11,5 +11,11 @@ preston ls --no-cache --remote https://deeplinker.bio,https://archive.org/downlo
 | sort\
 | uniq -c\
 | sort -nr\
-| head 100
+| head 100\
+| tee orcid-top100.txt
+
+
+
+
+
 
