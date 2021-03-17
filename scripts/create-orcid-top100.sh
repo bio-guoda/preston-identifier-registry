@@ -5,7 +5,7 @@
 #
 
 preston ls --no-cache --remote https://deeplinker.bio,https://archive.org/download/biodiversity-dataset-archives/data.zip/data/\
-| preston -l tsv --no-cache grep "0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}"\
+| preston grep --no-cache -l tsv "0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}"\
 | grep "http://www.w3.org/ns/prov#value"\
 | cut -f3\
 | sort\
