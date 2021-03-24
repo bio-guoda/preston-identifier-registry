@@ -21,4 +21,4 @@ preston history -l tsv $REMOTES\
 | pv -l\
 | grep "http://www.w3.org/ns/prov#value"\
 | cut -f1\
-| grep -o -E "hash://sha256/[a-f0-9]{32}"
+| grep -o -E "hash://sha256/[a-f0-9]{64}"
