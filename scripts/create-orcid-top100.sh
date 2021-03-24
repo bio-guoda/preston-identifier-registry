@@ -12,7 +12,8 @@ REMOTES="--remote https://deeplinker.bio,https://archive.org/download/biodiversi
 preston history -l tsv $REMOTES\
 | tr '\t' '\n'\
 | grep "hash://sha"\
-| tail -n1\
+| tail -n2\
+| head -n1\
 | xargs -L1 preston cat --no-cache $REMOTES\
 | preston grep --no-cache $REMOTES -l tsv "0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}"\
 | pv -l\
