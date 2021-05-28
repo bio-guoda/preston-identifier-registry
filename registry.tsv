@@ -36,3 +36,4 @@ mcz	http[s]{0,1}://mczbase[.]mcz[.]harvard[.]edu/guid/[a-zA-Z]+:[a-zA-Z]:[0-9]+	
 kew	http[s]{0,1}://specimens[.]kew[.]org/herbarium/[a-zA-Z][0-9]+	Kew Botanical Gardens	http://specimens.kew.org/herbarium/K001116483
 guano	[^a-zA-Z][Gg][Uu][Aa][Nn][Oo][^a-zA-Z]	https://en.wikipedia.org/wiki/Guano	guano
 jacq	http[s]{0,1}://[a-z]+[.]jacq[.]org/[A-Z-]+[0-9]+	https://jacq.org - a jointly administered herbarium management system and specimen database	https://je.jacq.org/JE07002985
+usnpc	USNPC\s+#\s+[0-9]+	US National Parasite Collection : https://naturalhistory.si.edu/research/invertebrate-zoology/usnpc . See also https://github.com/globalbioticinteractions/msb-para/issues/4	USNPC # 080155
