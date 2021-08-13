@@ -2,7 +2,10 @@
 #
 # resolve orcids from stdin
 #
-
+# example:
+#  $ echo "0000-0001-5561-8471" | ./resolve_orcids.sh
+#  Kojun Kanda
+#
 
 resolve_orcids() {
   # resolve names associated with the orcids
