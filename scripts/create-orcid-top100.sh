@@ -25,9 +25,11 @@ preston history -l tsv $REMOTES\
 | head -n100\
 | tee orcid-top100.txt
 
-# resolve names associated with the orcids
-paste <(cat orcid-top100.txt) <(cat orcid-top100.txt | sed -E 's/^[ ]+//g' | tr ' ' '\t' | cut -f2 | awk '{ print "https://orcid.org/" $1 "/person.json" }' | xargs -L1 curl --silent | jq --raw-output .displayName) | tee orcid-top100-with-names.txt
+resolve_orcids() {
+  # resolve names associated with the orcids
+  paste <(cat "$1") <(cat "$1" | sed -E 's/^[ ]+//g' | tr ' ' '\t' | cut -f2 | awk '{ print "https://orcid.org/" $1 "/person.json" }' | xargs -L1 curl --silent | jq --raw-output .displayName) | tee orcid-top100-with-names.txt
+}
 
-
+resolve_orcids orcid-top100.txt
 
 
