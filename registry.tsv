@@ -1,42 +1,42 @@
-name	pattern	description	example
-arctos	http[s]{0,1}://arctos.database.museum/guid/[a-zA-Z]+:[a-zA-Z]+:[a-zA-Z0-9().-]+[a-zA-Z0-9]	pattern matches arctos specimen identifiers 	http://arctos.database.museum/guid/MSB:Mamm:232346
-uuid-urn	urn:uuid:[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	pattern matching UUIDs	urn:uuid:46b51306-79ba-4a79-975b-094ccaf424ad
-uuid	[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	pattern matching UUIDs	46b51306-79ba-4a79-975b-094ccaf424ad
-email	[a-zA-Z0-9_.+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}	matches uncomplicated email addresses	joe@example.org
-doi	10[.][0-9]{4,9}/[a-zA-Z0-9][._;()/:a-zA-Z0-9-]+[a-zA-Z0-9]	doi pattern 	10.1000/182
-symbiota	http[s]{0,1}://[a-zA-Z0-9.:-]+/portal/collections/individual/index.php[?]{1}occid=[0-9]+	symbiota hosted specimen references	https://scan-bugs.org/portal/collections/individual/index.php?occid=31925925
-inaturalist	http[s]{0,1}://www.inaturalist.org/observations/[0-9]+	inaturalist observation records	https://www.inaturalist.org/observations/27508530
-orcid	0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}	ids for people and institutions https://orcid.org/	0000-0003-1038-3028
-genbank	http[s]{0,1}://www.ncbi.nlm.nih.gov/nuccore/([A-Za-z]+_?){0,1}[0-9]+([.][0-9]+){0,}	links to genetic sequences via NCBI's GenBank	http://www.ncbi.nlm.nih.gov/nuccore/AY181515
-bold	BOLD:[A-Z0-9]+([.][0-9]+)*	links to Barcode of Life Data System (BOLD) via Barcode Index Numbers (BIN) URIs. See https://doi.org/10.1371/journal.pone.0066213	BOLD:AAL4464
-ark	ark:/[0-9]{5}/[0-9A-Za-z=#*+@_$%/-]+	Archival Resource Keys (ARKs) See https://en.wikipedia.org/wiki/Archival_Resource_Key	ark:/65665/387f21a69b6294330858f7ea60e3ca132
-catalog	"[uU][rR][nN]:[cC][aA][tT][aA][lL][oO][gG]:[^\s,""']+"	URI for catalog records	urn:catalog:CAS:ENT:9035070
-lsid	"[uU][rR][nN]:[lL][sS][iI][dD]:[^\s,""']+"	URI for life science identifiers	urn:lsid:Coreoidea.speciesfile.org:TaxonName:456470
-bgbm	http://herbarium.bgbm.org/object/[a-zA-Z]+[0-9]+	Botanischer Garten und Botanisches Museum Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://herbarium.bgbm.org/object/B100277113
-ggbn	http[s]{0,1}://dnabank[.]bgbm[.]org/object/[a-zA-Z]+[0-9]+	Global Genome Biodiversity Network (GGBN)	http://dnabank.bgbm.org/object/DB15482
-luomus	http://id.luomus.fi/GL.749	Finnish Museum of Natural History, Helsinki. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.luomus.fi/GL.749
-ibot	http://ibot.sav.sk/herbarium/object/[a-zA-Z]+[0-9]+	Institute of Botany, Slovak Academy of Sciences, Bratislava. Also see https://cetaf.org/cetaf-stable-identifiers .	http://ibot.sav.sk/herbarium/object/SAV0001234
-mfn-berlin	http://coll.mfn-berlin.de/u/[a-zA-Z0-9_]+	Museum für Naturkunde, Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .	http://coll.mfn-berlin.de/u/ZMB_Orth_BA000061S01
-mnhn	http://coldb.mnhn.fr/catalognumber/mnhn/[a-zA-Z]+/[a-zA-Z]+[0-9]+	Muséum national d'histoire naturelle, Paris. Also see https://cetaf.org/cetaf-stable-identifiers .	http://coldb.mnhn.fr/catalognumber/mnhn/ec/ec32
-naturalis	http://data.biodiversitydata.nl/naturalis/specimen/[a-zA-Z]+[.][a-zA-Z]+[.][0-9]+	Naturalis Biodiversity Center, Leiden. Also see https://cetaf.org/cetaf-stable-identifiers .	http://data.biodiversitydata.nl/naturalis/specimen/RMNH.AVES.110103
-nhm-london	http://data.nhm.ac.uk/object/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .	http://data.nhm.ac.uk/object/a9bdc16d-c9ba-4e32-9311-d5250af2b5ac
-nhmuio	http://purl.org/nhmuio/id/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .	http://purl.org/nhmuio/id/41d9cbb4-4590-4265-8079-ca44d46d27c3
-rbge	http://data.rbge.org.uk/[a-zA-Z]+/[A-Za-z]+[0-9]+	Royal Botanic Garden Edinburgh. Also see https://cetaf.org/cetaf-stable-identifiers .	data.rbge.org.uk/herb/E00421509
-smns	http://col.smns-bw.org/object/[A-Za-Z][0-9]+	Staatliches Museum für Naturkunde Stuttgart. Also see https://cetaf.org/cetaf-stable-identifiers .	http://col.smns-bw.org/object/S10000227722006
-sbsb	http://id.snsb.info/snsb/collection/[0-9]+/[0-9]+/[0-9]+	Staatliche Naturwissenschaftliche Sammlungen Bayerns. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.snsb.info/snsb/collection/97112/153455/93009
-zmfk	http://id.zfmk.de/collection_ZFMK/[0-9]+	Zoologisches Forschungsmuseum Alexander Koenig, Bonn. Also see https://cetaf.org/cetaf-stable-identifiers .	http://id.zfmk.de/collection_ZFMK/2003261
-meise	http://www.botanicalcollections.be/specimen/[a-zA-Z]+[0-9]+V?	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://www.botanicalcollections.be/specimen/BR0000008422330
-rmca	http://darwinweb.africamuseum.be/object/[a-zA-Z0-9_-]+[a-zA-Z0-9]	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898
-antweb	http[s]{0,1}://www[.]antweb[.]org/specimen/[a-z][A-Z]+[0-9]+	AntWeb	http://www.antweb.org/specimen/FMNHINS0000105044
-tun	http[s]{0,1}://tun[.]fi/[a-zA-Z]+[.][0-9]+	various Finnish natural history museums	http://tun.fi/GAVK.2
-oulu	http[s]{0,1}://id[.][a-z]+[.]oulu[.]fi/[a-zA-Z]+[.][0-9]+	Museums at University of Oulu, Finland	http://id.zmuo.oulu.fi/MU.1
-tur	http[s]{0,1}://mus[.]utu[.]fi/[a-zA-Z]+[.][0-9]+	Natural History Museum, University of Turku, Finland	http://mus.utu.fi/TFN.1
-huh	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	Harvard University Herbarium	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/413bd724-7a92-41fe-befa-c7e1678b54a7
-mcz	http[s]{0,1}://mczbase[.]mcz[.]harvard[.]edu/guid/[a-zA-Z]+:[a-zA-Z]:[0-9]+	Harvard Museum of Comparative Zoology	http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:53924
-kew	http[s]{0,1}://specimens[.]kew[.]org/herbarium/[a-zA-Z][0-9]+	Kew Botanical Gardens	http://specimens.kew.org/herbarium/K001116483
-guano	[^a-zA-Z][Gg][Uu][Aa][Nn][Oo][^a-zA-Z]	https://en.wikipedia.org/wiki/Guano	guano
-jacq	http[s]{0,1}://[a-z]+[.]jacq[.]org/[A-Z-]+[0-9]+	https://jacq.org - a jointly administered herbarium management system and specimen database	https://je.jacq.org/JE07002985
-usnpc	USNPC\s+#\s+[0-9]{6}|United\s+States\s+National\s+Parasite\s+Collection\s+[0-9]{1,6}	US National Parasite Collection Catalog pattern as used by Smithsonian and Arctos: https://naturalhistory.si.edu/research/invertebrate-zoology/usnpc . See also https://github.com/globalbioticinteractions/msb-para/issues/4 ; and http://n2t.net/ark:/65665/386ad940e-e24f-4c20-b874-2a94371fe10e 	USNPC # 080155
-wikidata	http[s]{0,1}://www[.]wikidata[.]org/entity/[QP]{1}[0-9]+|http[s]{0,1}://www[.]wikidata[.]org/wiki/Q[0-9]+|https://www[.]wikidata[.]org/wiki/Property:P[0-9]+	https://wikidata.org	http://www.wikidata.org/entity/Q30034
-bionomia	http[s]{0,1}://bionomia.net/Q[0-9]+|http[s]{0,1}://bionomia.net/0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}	Bionomia links natural history specimens to the world's collectors.	https://bionomia.net/Q98828272
-field	http[s]{0,1}://db.fieldmuseum.org/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	The Field Museum of Natural History (FMNH), also known as The Field Museum, is a natural history museum in Chicago, Illinois, and is one of the largest such museums in the world.	https://db.fieldmuseum.org/d1b8ecb4-61df-4882-90a8-e046d4782a7c
+name	pattern	example	description
+arctos	http[s]{0,1}://arctos.database.museum/guid/[a-zA-Z]+:[a-zA-Z]+:[a-zA-Z0-9().-]+[a-zA-Z0-9]	http://arctos.database.museum/guid/MSB:Mamm:232346	pattern matches arctos specimen identifiers 
+uuid-urn	urn:uuid:[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	urn:uuid:46b51306-79ba-4a79-975b-094ccaf424ad	pattern matching UUIDs
+uuid	[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	46b51306-79ba-4a79-975b-094ccaf424ad	pattern matching UUIDs
+email	[a-zA-Z0-9_.+-]+@(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,6}	joe@example.org	matches uncomplicated email addresses
+doi	10[.][0-9]{4,9}/[a-zA-Z0-9][._;()/:a-zA-Z0-9-]+[a-zA-Z0-9]	10.1000/182	doi pattern 
+symbiota	http[s]{0,1}://[a-zA-Z0-9.:-]+/portal/collections/individual/index.php[?]{1}occid=[0-9]+	https://scan-bugs.org/portal/collections/individual/index.php?occid=31925925	symbiota hosted specimen references
+inaturalist	http[s]{0,1}://www.inaturalist.org/observations/[0-9]+	https://www.inaturalist.org/observations/27508530	inaturalist observation records
+orcid	0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}	0000-0003-1038-3028	ids for people and institutions https://orcid.org/
+genbank	http[s]{0,1}://www.ncbi.nlm.nih.gov/nuccore/([A-Za-z]+_?){0,1}[0-9]+([.][0-9]+){0,}	http://www.ncbi.nlm.nih.gov/nuccore/AY181515	links to genetic sequences via NCBI's GenBank
+bold	BOLD:[A-Z0-9]+([.][0-9]+)*	BOLD:AAL4464	links to Barcode of Life Data System (BOLD) via Barcode Index Numbers (BIN) URIs. See https://doi.org/10.1371/journal.pone.0066213
+ark	ark:/[0-9]{5}/[0-9A-Za-z=#*+@_$%/-]+	ark:/65665/387f21a69b6294330858f7ea60e3ca132	Archival Resource Keys (ARKs) See https://en.wikipedia.org/wiki/Archival_Resource_Key
+catalog	"[uU][rR][nN]:[cC][aA][tT][aA][lL][oO][gG]:[^\s,""']+"	urn:catalog:CAS:ENT:9035070	URI for catalog records
+lsid	"[uU][rR][nN]:[lL][sS][iI][dD]:[^\s,""']+"	urn:lsid:Coreoidea.speciesfile.org:TaxonName:456470	URI for life science identifiers
+bgbm	http://herbarium.bgbm.org/object/[a-zA-Z]+[0-9]+	http://herbarium.bgbm.org/object/B100277113	Botanischer Garten und Botanisches Museum Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .
+ggbn	http[s]{0,1}://dnabank[.]bgbm[.]org/object/[a-zA-Z]+[0-9]+	http://dnabank.bgbm.org/object/DB15482	Global Genome Biodiversity Network (GGBN)
+luomus	http://id.luomus.fi/GL.749	http://id.luomus.fi/GL.749	Finnish Museum of Natural History, Helsinki. Also see https://cetaf.org/cetaf-stable-identifiers .
+ibot	http://ibot.sav.sk/herbarium/object/[a-zA-Z]+[0-9]+	http://ibot.sav.sk/herbarium/object/SAV0001234	Institute of Botany, Slovak Academy of Sciences, Bratislava. Also see https://cetaf.org/cetaf-stable-identifiers .
+mfn-berlin	http://coll.mfn-berlin.de/u/[a-zA-Z0-9_]+	http://coll.mfn-berlin.de/u/ZMB_Orth_BA000061S01	Museum für Naturkunde, Berlin. Also see https://cetaf.org/cetaf-stable-identifiers .
+mnhn	http://coldb.mnhn.fr/catalognumber/mnhn/[a-zA-Z]+/[a-zA-Z]+[0-9]+	http://coldb.mnhn.fr/catalognumber/mnhn/ec/ec32	Muséum national d'histoire naturelle, Paris. Also see https://cetaf.org/cetaf-stable-identifiers .
+naturalis	http://data.biodiversitydata.nl/naturalis/specimen/[a-zA-Z]+[.][a-zA-Z]+[.][0-9]+	http://data.biodiversitydata.nl/naturalis/specimen/RMNH.AVES.110103	Naturalis Biodiversity Center, Leiden. Also see https://cetaf.org/cetaf-stable-identifiers .
+nhm-london	http://data.nhm.ac.uk/object/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	http://data.nhm.ac.uk/object/a9bdc16d-c9ba-4e32-9311-d5250af2b5ac	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .
+nhmuio	http://purl.org/nhmuio/id/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	http://purl.org/nhmuio/id/41d9cbb4-4590-4265-8079-ca44d46d27c3	Natural History Museum, London. Also see https://cetaf.org/cetaf-stable-identifiers .
+rbge	http://data.rbge.org.uk/[a-zA-Z]+/[A-Za-z]+[0-9]+	data.rbge.org.uk/herb/E00421509	Royal Botanic Garden Edinburgh. Also see https://cetaf.org/cetaf-stable-identifiers .
+smns	http://col.smns-bw.org/object/[A-Za-Z][0-9]+	http://col.smns-bw.org/object/S10000227722006	Staatliches Museum für Naturkunde Stuttgart. Also see https://cetaf.org/cetaf-stable-identifiers .
+sbsb	http://id.snsb.info/snsb/collection/[0-9]+/[0-9]+/[0-9]+	http://id.snsb.info/snsb/collection/97112/153455/93009	Staatliche Naturwissenschaftliche Sammlungen Bayerns. Also see https://cetaf.org/cetaf-stable-identifiers .
+zmfk	http://id.zfmk.de/collection_ZFMK/[0-9]+	http://id.zfmk.de/collection_ZFMK/2003261	Zoologisches Forschungsmuseum Alexander Koenig, Bonn. Also see https://cetaf.org/cetaf-stable-identifiers .
+meise	http://www.botanicalcollections.be/specimen/[a-zA-Z]+[0-9]+V?	http://www.botanicalcollections.be/specimen/BR0000008422330	Botanic Garden Meise, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .
+rmca	http://darwinweb.africamuseum.be/object/[a-zA-Z0-9_-]+[a-zA-Z0-9]	http://darwinweb.africamuseum.be/object/RMCA_Vert_2011.003.P.1885-1898	Royal Museum for Central Africa, Belgium. Also see https://cetaf.org/cetaf-stable-identifiers .
+antweb	http[s]{0,1}://www[.]antweb[.]org/specimen/[a-z][A-Z]+[0-9]+	http://www.antweb.org/specimen/FMNHINS0000105044	AntWeb
+tun	http[s]{0,1}://tun[.]fi/[a-zA-Z]+[.][0-9]+	http://tun.fi/GAVK.2	various Finnish natural history museums
+oulu	http[s]{0,1}://id[.][a-z]+[.]oulu[.]fi/[a-zA-Z]+[.][0-9]+	http://id.zmuo.oulu.fi/MU.1	Museums at University of Oulu, Finland
+tur	http[s]{0,1}://mus[.]utu[.]fi/[a-zA-Z]+[.][0-9]+	http://mus.utu.fi/TFN.1	Natural History Museum, University of Turku, Finland
+huh	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	http://purl.oclc.org/net/edu.harvard.huh/guid/uuid/413bd724-7a92-41fe-befa-c7e1678b54a7	Harvard University Herbarium
+mcz	http[s]{0,1}://mczbase[.]mcz[.]harvard[.]edu/guid/[a-zA-Z]+:[a-zA-Z]:[0-9]+	http://mczbase.mcz.harvard.edu/guid/MCZ:Mamm:53924	Harvard Museum of Comparative Zoology
+kew	http[s]{0,1}://specimens[.]kew[.]org/herbarium/[a-zA-Z][0-9]+	http://specimens.kew.org/herbarium/K001116483	Kew Botanical Gardens
+guano	[^a-zA-Z][Gg][Uu][Aa][Nn][Oo][^a-zA-Z]	guano	https://en.wikipedia.org/wiki/Guano
+jacq	http[s]{0,1}://[a-z]+[.]jacq[.]org/[A-Z-]+[0-9]+	https://je.jacq.org/JE07002985	https://jacq.org - a jointly administered herbarium management system and specimen database
+usnpc	USNPC\s+#\s+[0-9]{6}|United\s+States\s+National\s+Parasite\s+Collection\s+[0-9]{1,6}	USNPC # 080155	US National Parasite Collection Catalog pattern as used by Smithsonian and Arctos: https://naturalhistory.si.edu/research/invertebrate-zoology/usnpc . See also https://github.com/globalbioticinteractions/msb-para/issues/4 ; and http://n2t.net/ark:/65665/386ad940e-e24f-4c20-b874-2a94371fe10e 
+wikidata	http[s]{0,1}://www[.]wikidata[.]org/entity/[QP]{1}[0-9]+|http[s]{0,1}://www[.]wikidata[.]org/wiki/Q[0-9]+|https://www[.]wikidata[.]org/wiki/Property:P[0-9]+	http://www.wikidata.org/entity/Q30034	https://wikidata.org
+bionomia	http[s]{0,1}://bionomia.net/Q[0-9]+|http[s]{0,1}://bionomia.net/0000-00[0-9]{2}-[0-9]{4}-[0-9]{4}	https://bionomia.net/Q98828272	Bionomia links natural history specimens to the world's collectors.
+field	http[s]{0,1}://db.fieldmuseum.org/[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}	https://db.fieldmuseum.org/d1b8ecb4-61df-4882-90a8-e046d4782a7c	The Field Museum of Natural History (FMNH), also known as The Field Museum, is a natural history museum in Chicago, Illinois, and is one of the largest such museums in the world.
