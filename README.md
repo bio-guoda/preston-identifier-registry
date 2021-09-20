@@ -1,5 +1,5 @@
 # preston-identifier-registry
-A registry of identifiers commonly used in biodiversiy informatics. 
+A registry of identifiers commonly used in biodiversiy informatics available as a machine-readable versioned tsv file at [registry.tsv](registry.tsv). 
 
 Also includes scripts to automatically track these identifiers across [Preston](https://preston.guoda.bio) repositories and datasets.
 
