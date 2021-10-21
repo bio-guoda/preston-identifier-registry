@@ -22,3 +22,7 @@ Richards Kevin. 2010. TDWG GUID Applicability Statement, Version 2010-09. Biodiv
 Email Addresses 
 
 UUIDs 
+
+# Funding 
+
+This work is funded in part by grant [NSF OAC 1839201](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1839201&HistoricalAwards=false) from the National Science Foundation.
